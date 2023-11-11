@@ -47,6 +47,20 @@ function is_admin($username)
     return in_array($username, $admins);
 }
 
+function replace_links($body)
+{
+    //Regular Expression to filter urls
+    $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
+
+    // Checking if any url is present in the text
+    if(preg_match($reg_exUrl, $body, $url)) {
+           // Wrap urls by <a>
+           $body = preg_replace($reg_exUrl, '<a target=_blank href="'.$url[0].'">'.$url[0].'</a> ', $body);
+    } 
+
+    return $body;
+}
+
 // Show all errors for debugging purposes
 if($show_all_errors)
 {

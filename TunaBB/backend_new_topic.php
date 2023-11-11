@@ -82,7 +82,7 @@ if (!($row = $result->fetchArray())) {
 // === Save to Database ===================================================
 
 // Prepare the SQL statement
-$stmt = $db->prepare('INSERT INTO message (category, title, contents, author) VALUES (:category, :title, :contents, :author)');
+$stmt = $db->prepare('INSERT INTO message (category, title, contents, author, last_reply_date) VALUES (:category, :title, :contents, :author, CURRENT_TIMESTAMP)');
 
 // Bind parameters to the prepared statement
 $stmt->bindValue(':category', $category_id, SQLITE3_INTEGER);

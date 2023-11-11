@@ -20,7 +20,7 @@ if (isset($_GET["page"])) {
 $offset = ($page - 1) * $topics_per_page;
 if($offset < 0) $offset = 0;
 // Prepare the SQL query to select messages with a non-null title and matching category id
-$stmt = $db->prepare('SELECT message.id as topic_message_id, title, reply_count, author, date_created, last_reply_author, last_reply_date, category.icon as c_icon, category.name as c_name, category.id as c_id FROM message JOIN category on message.category = category.id WHERE topic_id IS NULL ORDER BY last_reply_date DESC, message.id DESC LIMIT :topic_count OFFSET :offset');
+$stmt = $db->prepare('SELECT message.id as topic_message_id, title, reply_count, author, date_created, last_reply_author, last_reply_date, category.icon as c_icon, category.name as c_name, category.id as c_id FROM message JOIN category on message.category = category.id WHERE topic_id IS NULL ORDER BY last_reply_date DESC LIMIT :topic_count OFFSET :offset');
 $stmt->bindValue(':offset', $offset, SQLITE3_INTEGER);
 $stmt->bindValue(':topic_count', $topics_per_page, SQLITE3_INTEGER);
 
