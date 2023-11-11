@@ -134,7 +134,7 @@ while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
         $icon = $fallback_avatar;
     }
     $post_index += 1;
-    $body = $row["body"];
+    $body = escapeHtmlEntities($row["body"]);
     $body = replaceUrlWithAppropriateTag($body);
 
     // Replacements

@@ -47,6 +47,10 @@ function is_admin($username)
     return in_array($username, $admins);
 }
 
+function escapeHtmlEntities($string) {
+    return htmlspecialchars($string, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+}
+
 function replaceUrlWithAppropriateTag($text) {
     // Pattern to match all URLs
     $urlPattern = '/(https?:\/\/\S+)/i';

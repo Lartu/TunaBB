@@ -36,7 +36,7 @@ $category_id  = $_POST["category_id"];
 
 if (strlen($title) < 1) {
     failwitherror("The title you entered is too short.");
-} else if (strlen($title) > 64) {
+} else if (strlen($title) > 128) {
     failwitherror("The title you entered is too long.");
 } else if (strlen($body) < 1) {
     failwitherror("The post you wrote is too short.");
