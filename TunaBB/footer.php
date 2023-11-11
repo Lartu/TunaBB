@@ -17,7 +17,7 @@
     Users: <?php echo $usercount;?>
     | Topics:  <?php echo $topiccount;?>
     | Messages:  <?php echo $messagecount;?>
-    – Forum powered by <a href="https://github.com/Lartu/TunaBB">TunaBB</a>.
+    – Forum powered by <a target=_blank href="https://github.com/Lartu/TunaBB">TunaBB</a>.
 </div>
 </body>
 
