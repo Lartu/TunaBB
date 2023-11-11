@@ -65,6 +65,7 @@ $stmt->bindValue(':author', $username, SQLITE3_TEXT);
 
 // Execute the query
 $results = $stmt->execute();
+$displayed_entries = 0;
 while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
     $reply_count = $row["reply_count"];
     $creation_date = (new DateTime($row["date_created"]))->format('d M Y H:i');
@@ -77,6 +78,7 @@ while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
     } else {
         $icon = $fallback_category_icon;
     }
+    $displayed_entries += 1;
 ?>
     <div class="topic_entry">
         <img class="icon_topic" src="images/icon_page.png">
@@ -90,6 +92,15 @@ while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
             <?php } ?>
         </span>
     </div>
+<?php
+}
+
+if($displayed_entries == 0)
+{
+?>
+<div class="paragraph_div">
+    None yet.
+</div>
 <?php
 }
 ?>

@@ -88,11 +88,13 @@ a, a:visited{
 
 #footer_div{
     font-size: 0.95em;
-    margin: 10px 10px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .category_entry{
-    margin: 0px 10px;
+    margin: 10px 10px;
     line-height: 150%;
 }
 
