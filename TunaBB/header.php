@@ -13,6 +13,7 @@ if (!isset($page_title)) {
     <title><?php echo $page_title; ?></title>
     <link rel="stylesheet" type="text/css" href="stylesheets/theme.css">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
