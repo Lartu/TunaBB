@@ -134,6 +134,8 @@ while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
         $icon = $fallback_avatar;
     }
     $post_index += 1;
+    $body = $row["body"];
+    $body = str_replace("\n", "<br>", $body);
 ?>
     <div class="topic_post" id="<?php echo $post_index; ?>">
         <table>
@@ -141,18 +143,18 @@ while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
                 <td width="1px">
                     <img class="user_avatar" src="<?php echo $icon; ?>">
                 </td>
-                <td class="user_data_column">
+                <td class="user_data_column" width="50%">
                     <a href="user.php?name=<?php echo $row["author"]; ?>" class=post_user_link><?php echo format_username($row["author"]); ?></a>
                     <br>Posts: <?php echo $row["m_count"]; ?>
+                </td>
+                <td class="post_actions_div" width="50%">
+                    Posted on <?php echo $creation_date; ?></small>
+                    | <a href="<?php echo "view_topic.php?id=$topic_id&post_index=$post_index#$post_index"; ?>" title="Permalink">#<?php echo $post_index; ?></a>
                 </td>
             </tr>
         </table>
         <div class="post_content">
-            <?php echo $row["body"]; ?>
-        </div>
-        <div class="post_actions_div">
-            Posted on <?php echo $creation_date; ?></small>
-            | <a href="<?php echo "view_topic.php?id=$topic_id&post_index=$post_index#$post_index"; ?>" title="Permalink">#<?php echo $post_index; ?></a>
+            <?php echo $body; ?>
         </div>
     </div>
 <?php

@@ -1,40 +1,43 @@
 /* General Page Theming */
-html{
+html {
     background-color: #2d2c71;
 }
 
-body{
-    margin: 0px ;
+body {
+    margin: 0px;
     background-color: #000039;
     background-image: url("../images/pso_bk.jpg");
     background-repeat: repeat;
 }
 
-body, #reply_text_area, input[type=text], input[type=password]{
-    color:aliceblue;
+body,
+#reply_text_area,
+input[type=text],
+input[type=password] {
+    color: aliceblue;
 }
 
 /* Header Bar */
-#header_div{
+#header_div {
     width: 100%;
     background-color: #0000b3;
 }
 
-#header_div img{
+#header_div img {
     height: 100px;
     max-width: 100%;
 }
 
 /* Subtitle Bar */
-#subtitle_div{
+#subtitle_div {
     background-color: navy;
-    color:aliceblue;
+    color: aliceblue;
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11pt;
 }
 
-.title_div{
+.title_div {
     width: 100%;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.25);
@@ -42,195 +45,212 @@ body, #reply_text_area, input[type=text], input[type=password]{
 }
 
 /* Not visited Link */
-a, a:visited{
-    color:deepskyblue;
+a,
+a:visited {
+    color: deepskyblue;
 }
 
 /* Visited Link Color */
-.topic_title_link:visited{
-    color:rgb(0, 145, 255);
+.topic_title_link:visited {
+    color: rgb(0, 145, 255);
 }
 
 /* Separator Bar */
-#separator_div{
+#separator_div {
     height: 20px;
     background-image: url("../images/separator_bar.png");
     background-repeat: repeat;
 }
 
 /* Menu Bar */
-#menu_div{
+#menu_div {
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Main Topic Title */
-.main_title{
+.main_title {
     margin: 0px;
     display: inline;
 }
 
 /* Topics Listing Entry */
-.topic_entry{
+.topic_entry {
     margin: 10px;
     line-height: 150%;
 }
 
 /* Link to a topic */
-.topic_title_link{
+.topic_title_link {
     font-weight: bold;
 }
 
-.topic_info{
+.topic_info {
     font-size: 0.95em;
 }
 
-#seeker_div, #seeker_div_top{
+#seeker_div,
+#seeker_div_top {
     font-weight: bold;
     margin: 10px 10px;
 }
 
-#footer_div{
+#footer_div {
     font-size: 0.95em;
     margin: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.category_entry{
+.category_entry {
     margin: 10px 10px;
     line-height: 150%;
 }
 
-.category_title_link{
+.category_title_link {
     font-weight: bold;
 }
 
-.category_info{
+.category_info {
     font-size: 0.95em;
 }
 
-.icon_topic{
+.icon_topic {
     height: 16px;
     aspect-ratio: 1;
 }
 
-.icon_category{
+.icon_category {
     height: 16px;
     aspect-ratio: 1;
 }
 
-#category_options_div{
+#category_options_div {
     margin: 10px 10px;
 }
 
-#category_logo{
+#category_logo {
     height: 1em;
     aspect-ratio: 1;
     margin-bottom: -4px;
 }
 
-#category_topic_div{
+#category_topic_div {
     margin: 10px 10px;
 }
 
-.topic_post{
+.topic_post {
     margin: 10px 10px;
 }
 
-.topic_post, .reply_controls_div
-{
+.topic_post,
+.reply_controls_div {
     max-width: 600px;
 }
 
-.topic_post table{
+.topic_post table {
     width: 100%;
 }
 
-.user_avatar{
+.user_avatar {
     height: 48px;
     aspect-ratio: 1;
 }
 
-.post_user_link{
+.post_user_link {
     font-weight: bold;
 }
 
-.user_data_column{
+.user_data_column {
     padding-left: 10px;
 }
 
-.post_actions_div{
+.post_actions_div {
+    vertical-align: bottom;
     text-align: right;
     font-size: 0.8em;
 }
 
-.post_content, #signup_error, #notification_message{
+.post_content,
+#signup_error,
+#notification_message {
     padding: 10px 10px;
     margin: 10px 0px;
 }
 
-#signup_error{
+#signup_error {
     color: red;
 }
 
-#notification_message{
+#notification_message {
     color: cyan;
 }
 
-.post_content, #reply_text_area, #topic_title_input, input[type=text], input[type=password], #notification_message, #signup_error{
+.post_content,
+#reply_text_area,
+#topic_title_input,
+input[type=text],
+input[type=password],
+#notification_message,
+#signup_error {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#reply_text_area, #topic_title_input, input[type=text], input[type=password]{
+#reply_text_area,
+#topic_title_input,
+input[type=text],
+input[type=password] {
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid grey;
 }
 
-.reply_controls_div{
+.reply_controls_div {
     margin: 10px;
 }
 
-form{
+form {
     padding: 0px;
     margin: 0px;
 }
 
-#reply_text_area{
+#reply_text_area {
     height: 150px;
 }
 
-#reply_text_area, #topic_title_input
-{
+#reply_text_area,
+#topic_title_input {
     width: 100%;
 }
 
-#reply_text_area, #topic_title_input, input[type=text], input[type=password]
-{
+#reply_text_area,
+#topic_title_input,
+input[type=text],
+input[type=password] {
     font-size: 12pt;
     font-family: inherit;
 }
 
-#topic_title_input, input[type=text], input[type=password]
-{
+#topic_title_input,
+input[type=text],
+input[type=password] {
     height: 30px;
 }
 
-input[type=text], input[type=password]
-{
+input[type=text],
+input[type=password] {
     width: 10em;
 }
 
-.log_field{
+.log_field {
     margin-top: 10px;
 }
 
-.paragraph_div{
+.paragraph_div {
     margin: 10px 10px;
     max-width: 600px;
 }
 
-ul{
+ul {
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -240,6 +260,6 @@ h4 {
     margin-bottom: 5px;
 }
 
-div{
+div {
     box-sizing: border-box;
 }
