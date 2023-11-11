@@ -1,6 +1,6 @@
-# TunaBB
+![TunaBB Logo](https://github.com/Lartu/TunaBB/blob/main/logo_bevel_logo.png?raw=true)
 
-![TunaBB Logo](https://github.com/Lartu/TunaBB/blob/main/logo.png?raw=true)
+# TunaBB
 
 **TunaBB** is a bulletin board designed from scratch to be self-contained, easy to deploy, easy to customize and easy to extend. It attempts not to use sessions, and requires users to enter their username and password every time they want to reply to a thread (a _topic_), create a new topic, etc.
 
