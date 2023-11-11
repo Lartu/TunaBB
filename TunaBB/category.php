@@ -55,7 +55,7 @@ include_once("header.php");
 $offset = ($page - 1) * $topics_per_page;
 if($offset < 0) $offset = 0;
 // Prepare the SQL query to select messages with a non-null title and matching category id
-$stmt = $db->prepare('SELECT * FROM message WHERE topic_id IS NULL AND category = :category_id ORDER BY id DESC LIMIT :topic_count OFFSET :offset');
+$stmt = $db->prepare('SELECT * FROM message WHERE topic_id IS NULL AND category = :category_id ORDER BY last_reply_date DESC, id DESC LIMIT :topic_count OFFSET :offset');
 $stmt->bindValue(':category_id', $category_id, SQLITE3_INTEGER);
 $stmt->bindValue(':offset', $offset, SQLITE3_INTEGER);
 $stmt->bindValue(':topic_count', $topics_per_page, SQLITE3_INTEGER);

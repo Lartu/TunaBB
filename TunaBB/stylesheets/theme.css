@@ -1,13 +1,16 @@
 /* General Page Theming */
 html {
     background-color: #2d2c71;
+    background-image: url("../images/pso_bk.jpg");
+    background-repeat: repeat;
 }
 
 body {
-    margin: 0px;
-    background-color: #000039;
-    background-image: url("../images/pso_bk.jpg");
-    background-repeat: repeat;
+    margin: auto;
+    max-width: 640px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 45, 0.677);
+    box-shadow: 0px 0px 10em black;
 }
 
 body,
@@ -145,7 +148,7 @@ a:visited {
 
 .topic_post,
 .reply_controls_div {
-    max-width: 600px;
+    max-width: 100%;
 }
 
 .topic_post table {
@@ -247,7 +250,7 @@ input[type=password] {
 
 .paragraph_div {
     margin: 10px 10px;
-    max-width: 600px;
+    max-width: 100%;
 }
 
 ul {
