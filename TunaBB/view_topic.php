@@ -151,7 +151,7 @@ while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
             <?php echo $row["body"]; ?>
         </div>
         <div class="post_actions_div">
-            <a href="<?php echo "view_topic.php?id=$topic_id&post_index=$post_index#$post_index"; ?>" title="Permalink">#<?php echo $post_index; ?></a> | Posted on <?php echo $creation_date; ?></small> | <a href="#">Quote</a>
+            <a href="<?php echo "view_topic.php?id=$topic_id&post_index=$post_index#$post_index"; ?>" title="Permalink">#<?php echo $post_index; ?></a> | Posted on <?php echo $creation_date; ?></small>
         </div>
     </div>
 <?php
