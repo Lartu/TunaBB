@@ -1,11 +1,11 @@
-![TunaBB Logo](https://github.com/Lartu/TunaBB/blob/main/logo.png?raw=true)
-
 # TunaBB
+
+![TunaBB Logo](https://github.com/Lartu/TunaBB/blob/main/logo.png?raw=true)
 
 **TunaBB** is a bulletin board designed from scratch to be self-contained, easy to deploy, easy to customize and easy to extend. It attempts not to use sessions, and requires users to enter their username and password every time they want to reply to a thread (a _topic_), create a new topic, etc.
 
 The main idea behind **TunaBB** is that it should be ready-to-go (almost) as soon as you are finished
-downloading it. It doesn't have any dependencies aside from what PHP already includes (except you are missing something or have an extension disabled), and it doesn't require you to use PHP package managers, or configure much stuff. Batteries included.
+downloading it. It doesn't have any dependencies aside from what PHP already includes (except you are missing something or have an extension disabled), and it doesn't require you to use PHP package managers, or configure much stuff. Batteries included. Canned software! (_ba dum tss!_)
 
 ## Screenshots
 
