@@ -135,6 +135,8 @@ while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
     }
     $post_index += 1;
     $body = $row["body"];
+
+    // Replacements
     $body = str_replace("\n", "<br>", $body);
 ?>
     <div class="topic_post" id="<?php echo $post_index; ?>">
