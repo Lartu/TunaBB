@@ -47,18 +47,19 @@ function is_admin($username)
     return in_array($username, $admins);
 }
 
-function replace_links($body)
-{
-    //Regular Expression to filter urls
-    $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
+function replaceUrlWithAppropriateTag($text) {
+    // Pattern to match all URLs
+    $urlPattern = '/(https?:\/\/\S+)/i';
 
-    // Checking if any url is present in the text
-    if(preg_match($reg_exUrl, $body, $url)) {
-           // Wrap urls by <a>
-           $body = preg_replace($reg_exUrl, '<a target=_blank href="'.$url[0].'">'.$url[0].'</a> ', $body);
-    } 
-
-    return $body;
+    return preg_replace_callback($urlPattern, function($matches) {
+        // Check if the URL is an image
+        if (preg_match('/\.(jpg|jpeg|png|gif)$/i', $matches[0])) {
+            return '<img style="max-width: 100%; max-height: 400px;" src="' . $matches[0] . '" alt="Image" />';
+        } else {
+            // If not an image, return an anchor tag
+            return '<a href="' . $matches[0] . '">' . $matches[0] . '</a>';
+        }
+    }, $text);
 }
 
 // Show all errors for debugging purposes
