@@ -1,4 +1,4 @@
-![TunaBB Logo](https://github.com/Lartu/TunaBB/blob/main/logo_bevel_logo.png?raw=true)
+![TunaBB Logo](https://github.com/Lartu/TunaBB/blob/main/small_logo.png?raw=true)
 
 # TunaBB
 
