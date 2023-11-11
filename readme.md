@@ -1,3 +1,5 @@
+![TunaBB Logo](https://github.com/Lartu/TunaBB/blob/main/logo.png?raw=true)
+
 # TunaBB
 
 **TunaBB** is a bulletin board designed from scratch to be self-contained, easy to deploy, easy to customize and easy to extend. It attempts not to use sessions, and requires users to enter their username and password every time they want to reply to a thread (a _topic_), create a new topic, etc.
@@ -43,6 +45,12 @@ Next, you'll have to configure TunaBB! (or you may choose to do that _before_ in
 Everything that's supposed to be configured by the user is in the `config.php` file. Every setting is explained within that very file.
 
 If you want to customize the TunaBB theme, modify the `theme.css` in the `stylesheets` directory.
+
+To add administrator accounts, add them to the `admins.php` file. The syntax is `add_admin("admin_username");`, obviously replace `admin_username` for whatever the username of the user you want to set as admin is. You can have as many administrators as you want.
+
+To create categories, point your browser to the `admin_portal.php` panel and choose an option there.
+
+Deleting categories, posts, topics, closing topics and banning users are planned features, but for the time being you can solve them using simple SQL queries.
 
 ## License
 
