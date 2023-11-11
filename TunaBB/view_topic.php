@@ -116,7 +116,7 @@ if ($page < $page_count) {
 <!-- Posts in topic -->
 <?php
 $offset = ($page - 1) * $posts_per_page;
-if($offset < 0) $offset = 0;
+if ($offset < 0) $offset = 0;
 // Prepare the SQL query to select messages with a non-null title and matching category id
 $stmt = $db->prepare('SELECT message.date_created as date_created, message.author as author, message.contents as body, user.message_count as m_count, user.avatar as avatar FROM message JOIN user ON message.author = user.username WHERE topic_id = :topic_id OR id = :topic_id ORDER BY id ASC LIMIT :topic_count OFFSET :offset');
 $stmt->bindValue(':topic_id', $topic_id, SQLITE3_INTEGER);
@@ -151,7 +151,8 @@ while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
             <?php echo $row["body"]; ?>
         </div>
         <div class="post_actions_div">
-            <a href="<?php echo "view_topic.php?id=$topic_id&post_index=$post_index#$post_index"; ?>" title="Permalink">#<?php echo $post_index; ?></a> | Posted on <?php echo $creation_date; ?></small>
+            Posted on <?php echo $creation_date; ?></small>
+            | <a href="<?php echo "view_topic.php?id=$topic_id&post_index=$post_index#$post_index"; ?>" title="Permalink">#<?php echo $post_index; ?></a>
         </div>
     </div>
 <?php
