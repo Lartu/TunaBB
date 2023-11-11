@@ -5,6 +5,10 @@
 The main idea behind **TunaBB** is that it should be ready-to-go (almost) as soon as you are finished
 downloading it. It doesn't have any dependencies aside from what PHP already includes (except you are missing something or have an extension disabled), and it doesn't require you to use PHP package managers, or configure much stuff. Batteries included.
 
+## Screenshots
+
+
+
 ## How to Install
 
 To install TunaBB, clone this repository and extract the `TunaBB` in the root of your webserver (or wherever you want the forum to be). In my case this is `/var/www/html`, as I'm using Apache on Ubuntu.
