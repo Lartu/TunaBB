@@ -7,7 +7,8 @@ downloading it. It doesn't have any dependencies aside from what PHP already inc
 
 ## Screenshots
 
-
+![Screenshot 1](https://github.com/Lartu/TunaBB/blob/main/Screenshots/Screenshot1.png?raw=true)
+![Screenshot 2](https://github.com/Lartu/TunaBB/blob/main/Screenshots/Screenshot2.png?raw=true)
 
 ## How to Install
 
