@@ -1,0 +1,13 @@
+<?php
+    include_once("functions.php");
+
+    // Add administrators here. For example:
+    // add_admin("yourusername");
+    // Administrators can:
+    //  - Create new categories...
+    //  - Delete topics...
+    //  - Delete messages...
+    //  - Close topics...
+    // ...using the admin_portal.php page.
+    add_admin("lartu");
+?>

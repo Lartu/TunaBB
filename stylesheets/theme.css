@@ -1,0 +1,239 @@
+/* General Page Theming */
+body{
+    margin: 0px ;
+    background-color: #000039;
+    background-image: url("../images/pso_bk.jpg");
+    background-repeat: repeat;
+}
+
+body, #reply_text_area, input[type=text], input[type=password]{
+    color:aliceblue;
+}
+
+/* Header Bar */
+#header_div{
+    width: 100%;
+    background-color: #0000b3;
+}
+
+#header_div img{
+    height: 100px;
+    max-width: 100%;
+}
+
+/* Subtitle Bar */
+#subtitle_div{
+    background-color: navy;
+    color:aliceblue;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
+
+.title_div{
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.25);
+    margin: 10px 0px;
+}
+
+/* Not visited Link */
+a, a:visited{
+    color:deepskyblue;
+}
+
+/* Visited Link Color */
+.topic_title_link:visited{
+    color:rgb(0, 145, 255);
+}
+
+/* Separator Bar */
+#separator_div{
+    height: 20px;
+    background-image: url("../images/separator_bar.png");
+    background-repeat: repeat;
+}
+
+/* Menu Bar */
+#menu_div{
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Main Topic Title */
+.main_title{
+    margin: 0px;
+    display: inline;
+}
+
+/* Topics Listing Entry */
+.topic_entry{
+    margin: 10px;
+    line-height: 150%;
+}
+
+/* Link to a topic */
+.topic_title_link{
+    font-weight: bold;
+}
+
+.topic_info{
+    font-size: 0.95em;
+}
+
+#seeker_div, #seeker_div_top{
+    font-weight: bold;
+    margin: 10px 10px;
+}
+
+#footer_div{
+    font-size: 0.95em;
+    margin: 10px 10px;
+}
+
+.category_entry{
+    margin: 0px 10px;
+    line-height: 150%;
+}
+
+.category_title_link{
+    font-weight: bold;
+}
+
+.category_info{
+    font-size: 0.95em;
+}
+
+.icon_topic{
+    height: 16px;
+    aspect-ratio: 1;
+}
+
+.icon_category{
+    height: 16px;
+    aspect-ratio: 1;
+}
+
+#category_options_div{
+    margin: 10px 10px;
+}
+
+#category_logo{
+    height: 1em;
+    aspect-ratio: 1;
+    margin-bottom: -4px;
+}
+
+#category_topic_div{
+    margin: 10px 10px;
+}
+
+.topic_post{
+    margin: 10px 10px;
+}
+
+.topic_post, .reply_controls_div
+{
+    max-width: 600px;
+}
+
+.topic_post table{
+    width: 100%;
+}
+
+.user_avatar{
+    height: 48px;
+    aspect-ratio: 1;
+}
+
+.post_user_link{
+    font-weight: bold;
+}
+
+.user_data_column{
+    padding-left: 10px;
+}
+
+.post_actions_div{
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.post_content, #signup_error, #notification_message{
+    padding: 10px 10px;
+    margin: 10px 0px;
+}
+
+#signup_error{
+    color: red;
+}
+
+#notification_message{
+    color: cyan;
+}
+
+.post_content, #reply_text_area, #topic_title_input, input[type=text], input[type=password], #notification_message, #signup_error{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#reply_text_area, #topic_title_input, input[type=text], input[type=password]{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid grey;
+}
+
+.reply_controls_div{
+    margin: 10px;
+}
+
+form{
+    padding: 0px;
+    margin: 0px;
+}
+
+#reply_text_area{
+    height: 150px;
+}
+
+#reply_text_area, #topic_title_input
+{
+    width: 100%;
+}
+
+#reply_text_area, #topic_title_input, input[type=text], input[type=password]
+{
+    font-size: 12pt;
+    font-family: inherit;
+}
+
+#topic_title_input, input[type=text], input[type=password]
+{
+    height: 30px;
+}
+
+input[type=text], input[type=password]
+{
+    width: 10em;
+}
+
+.log_field{
+    margin-top: 10px;
+}
+
+.paragraph_div{
+    margin: 10px 10px;
+    max-width: 600px;
+}
+
+ul{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+div{
+    box-sizing: border-box;
+}
